@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Document</title>
 </head>
 <body>
     <div class="main-container">
         <div class="upside">
-            <div class="logo">
-                <a href="index.html"><span>Brother's Exclusive</span></a>
+            <div class="logo animated fadeInLeft">
+                <a href="index.html">Brother's Exclusive</a>
             </div>
             <div class="nav-toggle">
                 <span></span>
             </div>
             <div class="navlist">
-                <ul class="nav">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">AboutMe</a></li>
-                    <li><a href="#more">MoreAbout</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contactme">ContactMe</a></li>
+                <ul class="nav animated fadeInLeft">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">AboutMe</a></li>
+                    <li><a href="#more" class="nav-link">MoreAbout</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contactme" class="nav-link">ContactMe</a></li>
                 </ul>
             </div>
         </div>
@@ -32,13 +33,13 @@
             <div class="home section" id="home">
                 <div class="container">
                     <div class="row">
-                        <div class="home-detail padd">
+                        <div class="home-detail padd animated fadeInLeft">
                             <h3 class="hello">Hello, I'M  <span style="color: red; font-size: 30px;">Boss Mustopha</span></h3>
                             <h4> im a <span class="typing"></span></h4>
                             <p>I'm a web developer with extensive experience. My expertise is to create and website design and development, and many more</p>
                             <a href="#" class="btn">Dowload CV</a>
                         </div>
-                        <div class="home-img">
+                        <div class="home-img animated fadeInLeft">
                             <img src="MM.jpg" alt="">
                         </div>
                     </div>
@@ -50,40 +51,54 @@
             <div class="about section" id="about">
                 <div class="container">
                     <div class="row">
-                        <div class="sec-tittle padd">
+                        <div class="sec-tittle padd way-fade-up">
                             <h2>About Me</h2>
                             <h5>why choose me?</h5>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="about-info padd">
+                        <div class="about-info padd way-fade-up">
                             <h4>I'M Boss Mustopha and   <span style="color: red; font-family: 'Courier New', Courier, monospace;">A WEB DEVELOPER</span></h4>
                         </div>
                     </div>
                     <div class="info-head padd">
                         <div class="row">
                             <div class="info">
-                                <div class="info-img">
+                                <div class="info-img way-fade-right">
                                     <img src="MM.jpg" alt="">
                                 </div>
-                                <div class="info-detail">
+                                <div class="info-detail way-fade-left">
                                     <h3>Yeah i'm web developer with frontend of menu stack with redux, along with aknock of building application.</h3>
                                     <h4>Here are some highlight</h4>
-                                    <div class="info-list">
-                                        <div>
-                                            <span></span><p>full stack web development</p></span>
-                                            <span><p>frontend</p><span>
-                                            <span><p>react and react native</p><span>
-                                            <span><p>building best aph</p><span>
-                                            <span><p>manage database</p><span>
+                                    <div class="info-list way-fade-up">
+                                        <div class="list-item">
+                                            <div class="dot"></div>
+                                            <span>Full Stack web and mobile development</span>                                           
                                         </div>
+                                        <div class="list-item">
+                                            <div class="dot"></div>
+                                            <span>Interactive Front End as per the design</span>                                           
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="dot"></div>
+                                            <span>React and React Native</span>                                           
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="dot"></div>
+                                            <span>Redux for State Mnanagement</span>                                           
+                                        </div>
+                                        <div class="list-item">
+                                            <div class="dot"></div>
+                                            <span>Building REST API</span>                                           
+                                        </div>
+
                                     </div>
-                                    <div class="row">
+                                    <div class="norow">
                                         <div class="button">
                                             <a href="#" class="btn">Dowload CV</a>
                                         </div>
                                         <div class="button">
-                                            <a href="#" class="btn">Hire me</a>
+                                            <a href="#contactme" class="btn">Hire me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -98,22 +113,22 @@
             <div class="More-about section" id="more">
                 <div class="container">
                     <div class="row">
-                        <div class="sec-tittle">
+                        <div class="sec-tittle way-fade-up">
                             <h2>More About</h2>
                             <h5>my formal bio details</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="list-head padd">
-                            <div class="more-list">
+                            <div class="more-list way-fade-left">
                                 <div class="more-list-contain">
                                     <div class="item-backgroud"></div>
                                     <div class="more-list-items">
-                                        <div class="fa-item active"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Education</span></div>
-                                        <div class="fa-item"><i class="fa fa-history" aria-hidden="true"></i><span>Work History</span></div> 
-                                        <div class="fa-item"><i class="fa fa-laptop" aria-hidden="true"></i><span>Programming Skill</span></div>
-                                        <div class="fa-item"><i class="fa fa- fa-window-maximize" aria-hidden="true"></i><span>Project</span></div>
-                                        <div class="fa-item"><i class="fa fa-gamepad" aria-hidden="true"></i><span>Interests</span></div>
+                                        <div class="fa-item active" data-target="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Education</span></div>
+                                        <div class="fa-item" data-target="#WorkHistory"><i class="fa fa-history" aria-hidden="true"></i><span>Work History</span></div> 
+                                        <div class="fa-item" data-target="#ProgrammingSkill"><i class="fa fa-laptop" aria-hidden="true"></i><span>Programming Skill</span></div>
+                                        <div class="fa-item" data-target="#Project"><i class="fa fa- fa-window-maximize" aria-hidden="true"></i><span>Project</span></div>
+                                        <div class="fa-item" data-target="#Interests"><i class="fa fa-gamepad" aria-hidden="true"></i><span>Interests</span></div>
                                     </div>
                                 </div>                                              
                             </div>
@@ -121,59 +136,68 @@
                             <div class="morelist padd">
                                 <div class="morelist-head">
                                     <!-------education start------>
-                                    <div class="morelist-details">
+                                    <div class="morelist-details active" data-content id="education">
                                         <div class="edu-details">
                                             <div class="info">
                                                 <div class="circle"></div>
-                                                <h4>High School</h4>
-                                                <div class="years">2004-2009</div>
+                                                <h4>University</h4>
+                                                <div class="years">undergraduate</div>
                                             </div>
                                             <div class="info-details">
-                                                <p>command day Secondary</p>
+                                                <p>University of Abuja</p>
+                                            </div>
+                                        </div>
+                                        <div class="edu-details">
+                                            <div class="info">
+                                                <div class="circle"></div>
+                                                <h4>National Youth Service Corps</h4>
+                                                <div class="years">undergraduate</div>
+                                            </div>
+                                            <div class="info-details">
+                                                <p>Help us beg ASUU</p>
                                             </div>
                                         </div>
                                         <div class="edu-details">
                                             <div class="info">
                                                 <div class="circle"></div>
                                                 <h4>High School</h4>
-                                                <div class="years">2004-2009</div>
+                                                <div class="years">2016-2019</div>
                                             </div>
                                             <div class="info-details">
-                                                <p>command day Secondary</p>
-                                            </div>
-                                        </div>
-                                        <div class="edu-details">
-                                            <div class="info">
-                                                <div class="circle"></div>
-                                                <h4>High School</h4>
-                                                <div class="years">2004-2009</div>
-                                            </div>
-                                            <div class="info-details">
-                                                <p>command day Secondary</p>
+                                                <p>command day Secondary Ede</p>
                                             </div>
                                         </div>  
                                     </div>
                                     <!-------education end------>
                                     <!-------work start------>
-                                    <div class="morelist-details">
+                                    <div class="morelist-details" data-content id="WorkHistory">
                                         <div class="edu-details">
                                             <div class="info">
                                                 <div class="circle"></div>
                                                 <h4>FULL STACK DEVELOPER INTERN</h4>
                                                 <div class="years">2004-2009</div>
                                             </div>
-                                            <div class="info-details">
-                                                <p>Currently working as MERN stack web and mobile developer and also an online instructor on udemy.
-                                                    - Developed an ecommerce website for client with the dashboard for managing the products, managing reviews, users, payment etc. .
-                                                    - Integrated the web app with backend services to create new user onboarding application with dynamic form content.
-                                                    - I stretch my mental capacity to develope UI as per the given designs.</p>
+                                            <div class="info-details work1">
+                                                <p>Currently working as MERN stack web and mobile developer and also an online instructor on udemy</p>
                                             </div>
+                                            <div class="descrip">
+                                                <p>
+                                                    - Developed an ecommerce website for client with the dashboard for managing the products, managing reviews, users, payment etc. .
+                                                </p>
+                                                <p>
+                                                    - Integrated the web app with backend services to create new user onboarding application with dynamic form content.
+                                                </p>
+                                                <p>
+                                                    - I stretch my mental capacity to develope UI as per the given designs.
+                                                </p>
+                                            </div>
+
                                         </div>
                                     </div>
                                     <!-------work end------>
 
                                     <!-------skill start------>
-                                    <div class="morelist-details">
+                                    <div class="morelist-details" data-content id="ProgrammingSkill">
                                         <div class="skill-head">
                                             <div class="skill-item">
                                                 <h3>CSS</h3>
@@ -215,70 +239,70 @@
                                     <!-------skill end------>
 
                                     <!-------project start------>
-                                    <div class="morelist-details">
+                                    <div class="morelist-details" data-content id="Project">
                                         <div class="edu-details">
                                             <div class="info">
                                                 <div class="circle"></div>
                                                 <h4>Personal Portfolio Website</h4>
-                                                <div class="years">2004-2009</div>
+                                                <div class="years">2021-2022</div>
                                             </div>
                                             <div class="info-details">
                                                 <h5>Technologies Used: HTML, CSS AND JAVASCRIPT</h5>
-                                                <p>command Secondary School</p>
+                                                <p>A personal portfolio website to reveil all my details and projects at one place.</p>
+                                            </div>
+                                        </div>
+                                        <div class="edu-details">
+                                            <div class="info">
+                                                <div class="circle"></div>
+                                                <h4>Mobile E-shop</h4>
+                                                <div class="years">2021-2022</div>
+                                            </div>
+                                            <div class="info-details">
+                                                <h5>Technologies Used: HTML, CSS AND JAVASCRIPT</h5>
+                                                <p>An ecommerce application designed to sell products online wth payment system integration.</p>
                                             </div>
                                         </div>
                                         <div class="edu-details">
                                             <div class="info">
                                                 <div class="circle"></div>
                                                 <h4>Portfolio Website</h4>
-                                                <div class="years">2004-2009</div>
+                                                <div class="years">2021-2022</div>
                                             </div>
                                             <div class="info-details">
                                                 <h5>Technologies Used: HTML, CSS AND JAVASCRIPT</h5>
-                                                <p>command Secondary School</p>
-                                            </div>
-                                        </div>
-                                        <div class="edu-details">
-                                            <div class="info">
-                                                <div class="circle"></div>
-                                                <h4>Portfolio Website</h4>
-                                                <div class="years">2004-2009</div>
-                                            </div>
-                                            <div class="info-details">
-                                                <h5>Technologies Used: HTML, CSS AND JAVASCRIPT</h5>
-                                                <p>command Secondary School</p>
+                                                <p>A portfolio website to reveil all details of the owner.</p>
                                             </div>
                                         </div>  
                                     </div>
                                     <!-------project end------>
 
                                     <!-------interest start------>
-                                    <div class="morelist-details">
+                                    <div class="morelist-details" data-content id="Interests">
                                         <div class="edu-details">
                                             <div class="info">
                                                 <div class="circle"></div>
                                                 <h4>Learning</h4>
                                             </div>
                                             <div class="info-details">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde quo culpa incidunt ut nulla labore explicabo. Provident omnis magnam in enim quia explicabo excepturi ratione vel non, obcaecati optio!</p>
+                                                <p>Despite having knowledge about something i do look forward in it because at certain momment i realize that, "what i learn today is bit different from what i learned yesterday"!</p>
                                             </div>
                                         </div>
                                         <div class="edu-details">
                                             <div class="info">
                                                 <div class="circle"></div>
-                                                <h4>swimming</h4>
+                                                <h4>Football</h4>
                                             </div>
                                             <div class="info-details">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora unde quo culpa incidunt ut nulla labore explicabo. Provident omnis magnam in enim quia explicabo excepturi ratione vel non, obcaecati optio!</p>
+                                                <p>I like to play football but i can say i do that for exercise!</p>
                                             </div>
                                         </div>
                                         <div class="edu-details">
                                             <div class="info">
                                                 <div class="circle"></div>
-                                                <h4>Gaming</h4>                               
+                                                <h4>Social</h4>                               
                                             </div>
                                             <div class="info-details">
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi magni recusandae mollitia porro fugit qui quisquam, adipisci molestias a exercitationem corporis quo nobis eius culpa?</p>
+                                                <p>i do use 70% out of the day on internet cuz i really like to explore and </p>
                                             </div>
                                         </div>  
                                     </div>
@@ -295,18 +319,18 @@
             <div class="portfolio section" id="portfolio">
                 <div class="container padd">
                     <div class="row">
-                        <div class="sec-tittle">
+                        <div class="sec-tittle way-fade-up">
                             <h2>Portfolio</h2>
                             <h5>training project</h5>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="portfolio-heading">
+                        <div class="portfolio-heading way-fade-right">
                             <h2>Project</h2>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="portfolio-item">
+                        <div class="portfolio-item way-fade-left">
                             <div class="portfolio-inner-item">
                                 <div class="portfolio-img">
                                     <img src="img/w1.jpeg" alt="">
@@ -320,7 +344,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio-item">
+                        <div class="portfolio-item way-fade-right">
                             <div class="portfolio-inner-item">
                                 <div class="portfolio-img">
                                     <img src="img/w2.jpg" alt="">
@@ -336,44 +360,64 @@
             <div class="contact section" id="contactme">
                 <div class="container padd">
                     <div class="row">
-                        <div class="sec-tittle">
+                        <div class="sec-tittle way-fade-up">
                             <h2>ContactMe</h2>
                             <h5>let get in touch</h5>
                         </div>
                     </div>
                     <div class="row">
                         <div class="contact-back padd">
-                            <div class="contact-media">
+                            <div class="contact-media way-fade-left">
                                 <h2>Get In Touch</h2>
-                                <ul>
-                                    <span><i class="fa fa-facebook"></i></span>
-                                    <span><i class="fa fa-whatsapp"></i></span>
-                                    <span><i class="fa fa-twitter"></i></span>
-                                    <span><i class="fa fa-telegram"></i></span>
-                                </ul>
+                                <div class="media">
+                                    <div class="media-item">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook"></i>
+                                            <span>like on facebook</span>
+                                        </a>
+                                    </div>
+                                    <div class="media-item">
+                                        <a href="#">
+                                            <i class="fa-brands fa-whatsapp"></i>
+                                            <span>like on whatsapp</span>
+                                        </a>  
+                                    </div>
+                                    <div class="media-item">
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                            <span>like on twitter</span>
+                                        </a>                               
+                                    </div>
+                                    <div class="media-item">
+                                        <a href="#">
+                                            <i class="fa-brands fa-telegram"></i>
+                                            <span>like on telegram</span>
+                                        </a>                                  
+                                    </div>
+                                </div>
                             </div>
                             <div class="contact-form">
                                 <div class="row">
-                                    <div class="form-item col-6">
+                                    <div class="form-item col-6 way-fade-left">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Name">
                                         </div>
                                     </div>
-                                    <div class="form-item col-6">
+                                    <div class="form-item col-6 way-fade-left">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Email">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-item col-12">
+                                    <div class="form-item col-12 way-fade-left">
                                         <div class="form-group">
                                             <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="form-item col-12">
+                                    <div class="form-item col-12 way-fade-up">
                                         <div class="form-group">
                                             <button type="button" class="btn">Send Me Message</button>
                                         </div>
@@ -387,6 +431,8 @@
              <!-------contact end------>
         </div>
     </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery.waypoints.min.js"></script>
     <script src="js/typed.js"></script>
     <script src="js/script.js"></script>
 </body>

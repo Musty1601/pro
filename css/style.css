@@ -1,10 +1,11 @@
 :root{
     --bg-black-900:#e4e4e4d5;
-    --bg-black-700:#faf4f4;
+    --bg-black-700:#977a7a;
     --bg-black-50:#fdfdfdc9;
-    --bg-black-500:#0e0e0f;
-    --text-black-100:#3107c9d2;
-    --text-black-900:#5f31b3;
+    --bg-black-500:#0a0a0c8e;
+    --text-black-90:#3107c9d2;
+    --text-black-900:#d5d1db;
+    --text-black-100:#e42727dc;
 }
 *{
     margin: 0;
@@ -14,8 +15,11 @@
 body{
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
 }
@@ -36,11 +40,13 @@ img{
     display: none !important;
 }
 .btn{
-    background-color: red;
+    background-color: var(--text-black-100);
     box-sizing: border-box;
     border: 2px solid white;
     border-radius: 50px;
-    padding: 12px 32px;
+    padding: 12px 0px;
+    text-align: center;
+    width: 160px;
     display: inline-block;
     color: white;
     margin-top: 30px;
@@ -84,7 +90,7 @@ img{
     border-radius: 50%;
     text-align: center;
     justify-content: center;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid var(--text-black-100);
 }
 .sec-tittle h5{
     position: absolute;
@@ -99,7 +105,7 @@ img{
     content: "";
     width: 200px;
     height: 3px;
-    background-color: red;
+    background-color: var(--text-black-100);
     position: absolute;
     bottom: -3px;
     left: -50px;
@@ -112,6 +118,10 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
+}
+.upside .logo{
+    margin-left: 8px;
 }
 .upside .logo a{
     color: white;
@@ -122,22 +132,22 @@ img{
 .upside .logo a:before{
     content: "";
     width: 22px;
-    height: 25px;
+    height: 23px;
     position: absolute;
-    border-top: 5px solid red;
-    border-left: 5px solid red;
-    border-bottom: 5px solid red;
+    border-top: 5px solid var(--text-black-100);
+    border-left: 5px solid var(--text-black-100);
+    border-bottom: 5px solid var(--text-black-100);
     left: 10px;
     top: 0;
 }
 .upside .logo a::after{
     content: "";
     width: 22px;
-    height: 25px;
+    height: 23px;
     position: absolute;
-    border-top: 5px solid red;
-    border-right: 5px solid red;
-    border-bottom: 5px solid red;
+    border-top: 5px solid var(--text-black-100);
+    border-right: 5px solid var(--text-black-100);
+    border-bottom: 5px solid var(--text-black-100);
     top: 0;
 }
 .upside .nav-toggle{
@@ -155,7 +165,7 @@ img{
 .upside .nav-toggle span{
     width: 20px;
     height: 2px;
-    background-color: red;
+    background-color: var(--text-black-100);
     display: inline-block;
     position: relative;
     left: 6px;
@@ -180,7 +190,7 @@ img{
     content: "";
     width: 20px;
     height: 2px;
-    background-color: red;
+    background-color: var(--text-black-100);
     display: inline-block;
     position: absolute;
     top: -10px;
@@ -189,7 +199,7 @@ img{
     content: "";
     width: 20px;
     height: 2px;
-    background-color: red;
+    background-color: var(--text-black-100);
     display: inline-block;
     position: absolute;
     bottom: -10px;
@@ -199,9 +209,10 @@ img{
     display: inline;
 }
 .upside .navlist a{
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     font-weight: 700;
+    cursor: pointer;
 }
 .home{
     margin-top: -50px;
@@ -221,7 +232,6 @@ img{
 }
 .home .home-detail a{
     font-size: 20px;
-    margin-top: 35px;
 }
 .home h3{
     font-size: 26px;
@@ -232,16 +242,16 @@ img{
     font-size: 26px;
     font-weight: 600;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 15px 0;
+    margin-top: 15px ;
 }
 .typing{
     font-size: 30px;
-    color: red;
+    color: var(--text-black-100);
 }
 .home p{
     font-size: 20px;
     padding-bottom: 30px;
-    color: red;
+    color: var(--text-black-100);
 }
 .home .home-img{
     flex:  0 0 40%;
@@ -269,20 +279,22 @@ img{
     text-align: center;
 }
 
-.about .info{
+.about .info-head .info{
     display: flex;
     flex: 0 0 100%;
     max-width: 100%;
-    height: 500px;
     position: relative;
     box-shadow: 10px 10px 10px 10px var(--text-black-900);
 }
 .about .info .info-img{
     flex: 0 0 50%;
     max-width: 50%;
+    height: 500px;
 }
 .about .info .info-img img{
     height: 500px;
+    width: 100%;
+    height: 100%;
 }
 .about .info .info-detail{
     flex: 0 0 50%;
@@ -292,32 +304,44 @@ img{
 }
 .about .info .info-detail h3{
     font-size: 20px;
+    color: hwb(0 7% 93% / 0.897);
     padding-bottom: 30px;
 }
 .about .info .info-detail h4{
-    font-size: 17px;
-    border-bottom: 1px solid red;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.774);
+    border-bottom: 1px solid var(--text-black-100);
     padding-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
 .about .info .info-detail .info-list{
-    padding-left: 10px;
+    margin-top: 20px;
+    position: relative;
 }
-.about .info .info-detail .info-list li{
-    list-style: disc;
-    font-size: 20px;
-    color: red;
-    margin-left: 10px;
+.about .info .info-detail .info-list .list-item{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
 }
-.about .info .info-detail .info-list p{
-   color: black;
+.about .info .info-detail .info-list .dot{
+    height: 11px;
+    width: 11px;
+    background-color: var(--text-black-100);
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.about .info .info-detail .info-list span{
+   color: var(--bg-black-500);
    text-transform: capitalize;
-   font-size: 18px;
-   padding-bottom: 5px;
+   font-size: 14px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .about .info .info-detail .button{
-    padding-left: 10px;
+    flex: 0 0 50%;
+    display: inline-block;
+    max-width: 50%;
+    font-size: 13px;
 }
 .More-about .list-head{
     display: flex;
@@ -363,6 +387,7 @@ img{
     border-radius: 20px;
     width: 30px;
     background-color: black;
+    transition: width 0.6s ease 0s;
 }
 .More-about .list-head .more-list .more-list-contain .more-list-items .fa-item.active{
     color: white;
@@ -387,18 +412,25 @@ img{
     width: 10rem;
     color: white;
 }
-@keyframes slidesection {
+.More-about .list-head .morelist .morelist-head{
+    position: relative;
+}
+.More-about [data-content] {
+    display: none !important;
+}
+.active[data-content] {
+    display: flex !important;
+    z-index: 2;
+    opacity: 1;
+    animation: slide 0.9s ease;
+}
+@keyframes slide {
     0%{
-        transform: translatey(0px);
+        transform: translateY(-1440px);
     }
     100%{
-        transform: translatey(-360px);
+        transform: translateY(0px);
     }
-}
-.More-about .list-head .morelist .morelist-head{
-    flex: 0 0 100%;
-    max-width: 100%;
-    position: relative;
 }
 .More-about .list-head .morelist .morelist-head  .morelist-details{
     padding-left: 60px;
@@ -406,6 +438,7 @@ img{
     flex-direction: column;
     justify-content: space-evenly;
     height: 360px;
+    transition: transform all 3.2s ease;
 }
 .More-about .morelist .morelist-head .morelist-details .edu-details{
    display: flex;
@@ -416,7 +449,7 @@ img{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: red;
+    background-color: var(--text-black-100);
     position: absolute;
     left: -30px;
     top: 5px;
@@ -426,21 +459,29 @@ img{
     position: relative;
     justify-content: space-between;
 }
+.descrip{
+    margin-top: 10px;
+}
+.descrip p{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+}
 .More-about .morelist .morelist-head .morelist-details .edu-details .info h4{
-    font-size: 16px;
-    color: red;
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--text-black-100);
     font-weight: 600;
 }
 .More-about .morelist .morelist-head .morelist-details .info-details p{
-   font-size: 15px;
-   font-weight: bold;
-   margin: 10px 0 0;
+   font-size: 16px;
+   padding: 1px 0 0;
 }
 .More-about .morelist .morelist-head .morelist-details .edu-details .info h5{
     padding-top: px;
 }
 .More-about .morelist .morelist-head .morelist-details .edu-details .info .years{
-    background-color: red;
+    background-color: var(--text-black-100);
     width: 100px;
     padding: 5px;
     border-radius: 50px;
@@ -453,12 +494,14 @@ img{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    position: relative;
 }
 .More-about .list-head  .morelist .morelist-details .skill-item{
     flex: 0 0 50%;
     max-width: 50%;
     padding-bottom: 30px;
     padding-right: 20px;
+    justify-content: space-evenly;
 }
 .More-about .list-head .morelist .morelist-details .skill-item h3{
     font-size: 20px;
@@ -472,13 +515,13 @@ img{
     position: relative;
 }
 .More-about .list-head .morelist .morelist-details .progress-in{
-    background-color: red;
+    background-color: var(--text-black-100);
     height: 100%;
     border-radius: 4px;
 }
 .More-about .list-head .morelist .morelist-details .progress-percent{
     position: absolute;
-    top: -20px;
+    top: -25px;
     right: 0;
     font-size: 20px;
     font-weight: 500;
@@ -503,28 +546,78 @@ img{
 }
 .portfolio .portfolio-item .portfolio-inner-item img{
     border-radius: 4px;
-    border: 5px solid red;
+    border: 5px solid var(--text-black-100);
     width: 100%;
     display: block;
 }
 .contact .contact-back{
-    background-color: var(--bg-black-500);
-    height: 400px;
+    background-color: black;
+    height: 500px;
     flex: 0 0 100%;
     max-width: 100%;
     position: relative;
     border-radius: 20px;
 }
 .contact .contact-back .contact-media{
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    align-items: center;
+    display: flex;
 }
 .contact .contact-back .contact-media h2{
     color: white;
+    margin-right: 10px;
+}
+.contact .contact-back .contact-media .media{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contact .contact-back .contact-media .media .media-item{
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 1px 3px 1px;
+    
+    border-radius: 4px;
+    border: 1px solid white;
+}
+.contact .contact-back .contact-media .media .media-item a{
+    display: inline-flex;
+    align-items: center;
+}
+.contact .contact-back .contact-media .media .media-item i{
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    transition: 1s;
+}
+.contact .contact-back .contact-media .media .media-item span{
+    font-size: 11px;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+    white-space: nowrap;
+    line-height: 14px;   
+    transform: translateX(7px);
+    max-width: 0;
+    overflow: hidden;
+    transition: 1.2s;
+}
+.contact .contact-back .contact-media .media .media-item span::after{
+    content: "";
+    margin-right: 6px;
+}
+.contact .contact-back .contact-media .media .media-item:hover i,
+.contact .contact-back .contact-media .media .media-item:hover span{
+    color: blue;
+}
+.contact .contact-back .contact-media .media .media-item:hover span{
+    max-width: 400px;
 }
 .contact .contact-back .contact-form{
-   flex: 0 0 60%;
-   max-width: 60%;
+   flex: 0 0 50%;
+   max-width: 50%;
    width: 100%;
    position: absolute;
    bottom: 0;
@@ -547,12 +640,12 @@ img{
     width: 100%;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid red;
+    border: 1px solid var(--text-black-100);
     padding: 10px;
     font-size: 15px;
 }
 .contact .contact-back .contact-form .form-item .form-control:hover{
-    border: 1px solid red;
+    border: 1px solid var(--text-black-100);
 }
 .contact .contact-back .contact-form .form-item .form-control:focus{
     box-shadow: 0 0 5px 2px var(--bg-black-700);
@@ -588,6 +681,25 @@ img{
         display: flex;
         flex-direction: column;
     }
+    .More-about .list-head{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px;
+    }
+    .More-about .list-head .more-list{
+        display: flex;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .More-about .list-head .morelist{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .More-about .list-head .morelist .morelist-head  .morelist-details{
+        padding: 0;
+    }
 }
 @media (max-width:997px) {
     .home .home-detail{
@@ -621,26 +733,9 @@ img{
         min-height: 0;
     }
     .More-about .list-head{
-        display: block;
+        display: flex;
     }
-    .More-about .list-head .more-list{
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-    .More-about .list-head .morelist{
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-left: 0px;
-    }
-    .More-about .list-head .morelist .morelist-details
-    {
-        display: block;
-        padding-left: 0;
-    }
-    .More-about .list-head .morelist .skill .skill-head{
-        
-        padding-left: 0;
-    }
+
     .about .info-head .info .info-detail{
         flex: 0 0 100%;
         max-width: 100%;
@@ -654,6 +749,11 @@ img{
     .contact .contact-back .contact-form .col-6{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .info-detail .button{
+        flex: 0 0 100%;
+        max-width: 100%;
+        align-items: center;
     }
 }
 @media (max-width:490px) {
@@ -686,6 +786,12 @@ img{
     .home .home-detail a{
         margin-top: 0;
     }
+    .about .info .info-detail .norow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 @media (max-width:360px) {
     .home .home-img{
