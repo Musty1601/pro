@@ -587,8 +587,9 @@ img{
     align-items: center;
 }
 .contact .contact-back .contact-media .media .media-item i{
-    border-radius: 50px;
     display: inline-flex;
+    font-size: 21px;
+    color: rgb(58, 58, 129);
     align-items: center;
     transition: 1s;
 }
@@ -653,9 +654,13 @@ img{
 .contact .contact-back .contact-form textarea.form-control{
     height: 120px !important;
 }
-.contact .contact-back .contact-form .btn{
+.contact .contact-back .contact-form .con-btn{
     padding: 0 50px;
     height: 50px;
+    cursor: pointer;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
 }
 .contact .contact-back .contact-form .btn:hover{
     padding: 10px;

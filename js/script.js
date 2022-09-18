@@ -65,4 +65,6 @@ var $child = $('.way-fade-right').children();
       $(this).waypoint(function(){
         self.addClass('animated fadeInRight');
       },{offset: '90%'});
-    });    
+    }); 
+    
+   
