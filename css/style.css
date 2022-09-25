@@ -676,7 +676,7 @@ img{
         backdrop-filter: blur(20px);
         z-index: 1;
         inset: 0 0 0 30%;
-        padding: min(30vh, 200px) 40px;
+        padding: min(40vh, 200px) 40px;
         transform: translateX(100%);
     }
     .upside .navlist.open{
